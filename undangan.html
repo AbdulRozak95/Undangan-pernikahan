@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<section id="guest">
+    <h2>Kepada yang Terhormat:</h2>
+    <h3 id="guest-name">[Nama Tamu]</h3>
+</section>
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNDANGAN PERNIKAHAN</title>
+    <link rel="stylesheet" href="undangan.css">
+    <script src="undangan.js" defer></script>
+</head>
+<body>
+    <audio id="bg-music" autoplay loop>
+        <source src="Instrumen_adem_banget_ketika_cinta_bertasbih.ogg" type="audio/ogg">
+        <source src="Instrumen_adem_banget_ketika_cinta_bertasbih.mp3" type="audio/mp3">
+    </audio>
+    
+    <section id="hero">
+        <h1>Undangan Pernikahan</h1>
+        <h2>Abdul Rozak Choirudin & Laily Nur Faizah</h2>
+        <p>Sabtu, 01 Februari 2031</p>
+        <div id="countdown"></div>
+    </section>
+    
+    <section id="gallery">
+        <h3>Galeri Foto</h3>
+        <div class="gallery-container">
+            <img src="ft3.jpg" alt="Foto 1">
+            <img src="ft2.JPG" alt="Foto 2">
+            <img src="ft.JPG" alt="Foto 3">
+            <img src="ft4.jpg" alt="Foto 4">
+        </div>
+    </section>
+
+    <section id="location">
+        <h3>Lokasi Acara</h3>
+    
+        <!-- Menampilkan Peta -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d192.65898478403304!2d111.98910207316432!3d-7.143086080130211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1738324058330!5m2!1sid!2sid" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    
+        <!-- Tombol untuk Membuka Rute dengan Lokasi Pengguna -->
+        <p>
+            <button onclick="openGoogleMaps()">🚗 Klik di sini untuk menuju lokasi</button>
+        </p>
+    </section>    
+    
+    <section id="rsvp">
+        <h3>Konfirmasi Kehadiran</h3>
+        <form id="rsvp-form">
+            <input type="text" placeholder="Nama Anda" required>
+            <select>
+                <option>Hadir</option>
+                <option>Tidak Hadir</option>
+            </select>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <section id="share">
+        <h3>Bagikan Undangan</h3>
+        <button onclick="shareToWhatsApp()">Bagikan via WhatsApp</button>
+        <button onclick="shareToInstagram()">Bagikan via Instagram</button>
+    </section>
+</body>
+</html>
